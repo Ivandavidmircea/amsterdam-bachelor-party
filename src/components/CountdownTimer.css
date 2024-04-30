@@ -1,0 +1,23 @@
+/* CountdownTimer.css */
+.timer-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .timer-unit {
+    padding: 0 5px;  /* Add some spacing around each unit */
+  }
+
+  .timer-unit-value
+  {
+    font-size:30px;
+    color: crimson /* Lighter teal on hover */
+    ;
+  }
+
+  .time-up
+  {
+    font-size: 20px;
+    opacity: 0.5;
+  }

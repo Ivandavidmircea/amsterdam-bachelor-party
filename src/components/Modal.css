@@ -1,0 +1,87 @@
+.btn-modal  {
+    background-color: #009879; /* Greenish background color */
+    border: none;            /* No border for a cleaner look */
+    color: white;            /* Text color */
+    padding: 10px 20px;      /* Padding around the text */
+    text-align: center;      /* Center-align the text */
+    text-decoration: none;   /* No underline */
+    display: inline-block;   /* Allows setting dimensions */
+    font-size: 16px;         /* Font size of the text */
+    border-radius: 10px;     /* Rounded corners */
+    opacity: 0.75;           /* 75% opacity */
+    cursor: pointer;
+}
+
+.btn-modal:hover {
+    background-color: #1ab99b; /* Lighter teal on hover */
+}
+
+.btn-modal strong { /* Make only the text bold */
+    font-weight: bold; /* Bold text styling */
+    color: inherit;   /* Inherits the white color from the button */
+    opacity: 1;       /* Full opacity for the text */
+}
+
+
+
+.btn-agenda  {
+    background-color: #009879; /* Greenish background color */
+    border: none;            /* No border for a cleaner look */
+    color: white;            /* Text color */
+    padding: 10px 20px;      /* Padding around the text */
+    text-align: center;      /* Center-align the text */
+    text-decoration: none;   /* No underline */
+    font-size: 16px;         /* Font size of the text */
+    border-radius: 10px;     /* Rounded corners */
+    opacity: 1;           /* 75% opacity */
+    cursor: pointer;
+}
+
+.btn-agenda :hover {
+    background-color: #1ab99b; /* Lighter teal on hover */
+}
+
+.btn-agenda strong { /* Make only the text bold */
+    font-weight: bold; /* Bold text styling */
+    opacity: 1;       /* Full opacity for the text */
+}
+
+
+
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+ 
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+    width: 350px;
+    height: 500px;
+    overflow-y: auto;   
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
