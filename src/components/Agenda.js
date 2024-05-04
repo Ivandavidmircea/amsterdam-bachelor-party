@@ -10,14 +10,14 @@ const Agenda = () => {
     const days = ['May 5', 'May 6', 'May 7', 'May 8', 'May 9', 'May 10'];
     const times = ['06:00 AM', '07:00 AM', '08:00 AM', '09:00 AM', '10:00 AM', '11:00 AM', '12:00 PM', '01:00 PM', '02:00 PM', '03:00 PM', '04:00 PM', '05:00 PM', '06:00 PM', '07:00 PM', '08:00 PM', '09:00 PM', '10:00 PM', '11:00 PM', '12:00 AM'];
     const IasiCharleroiFlightTickets = [
-        { name: "Mihnea Ochesanu", link: "https://www.pexels.com/photo/white-and-red-plane-beside-clouds-low-angle-photography-46148/"}
+        { name: "Mihnea Ochesanu", link: "https://drive.google.com/file/d/15rOmF5rrdDkreftLthCZ0NQyNKdbrEKn/view?usp=drive_link"}
       ];
 
     const ClujCharleroiFlightTickets = [
-        { name: "Ivan David", link: "https://www.pexels.com/photo/white-and-red-plane-beside-clouds-low-angle-photography-46148/"},
-        { name: "Matei Andrei", link: "https://www.pexels.com/photo/white-and-red-plane-beside-clouds-low-angle-photography-46148/"},
-        { name: "Mateica Septimiu", link: "https://www.pexels.com/photo/white-and-red-plane-beside-clouds-low-angle-photography-46148/"},
-        { name: "Pacurar Corneliu", link: "https://www.pexels.com/photo/white-and-red-plane-beside-clouds-low-angle-photography-46148/"}
+        { name: "Ivan David", link: "https://drive.google.com/file/d/1OdKTlMZAGpZSvADxuGZZUC1wGHNT43Mq/view?usp=drive_link"},
+        { name: "Matei Andrei", link: "https://drive.google.com/file/d/1JzYp1gd1IkQIJbVURJioNL7WTVEFtT2r/view?usp=drive_link"},
+        { name: "Mateica Septimiu", link: "https://drive.google.com/file/d/1tfszmtEbcqIql1MZVAKIVM0uA2hvribA/view?usp=drive_link"},
+        { name: "Pacurar Corneliu", link: "https://drive.google.com/file/d/170unMVGP058EE41aPx1McTQooJLd92P5/view?usp=drive_link"}
       ];
 
     const CharleroiBruxellesTravelTickets = [
@@ -27,6 +27,14 @@ const Agenda = () => {
         { name: "Mihnea Ochesanu", link: "https://drive.google.com/file/d/1P2O5_6-8wMv4ulgTLotzNbik_-eM48KH/view?usp=drive_link"},
         { name: "Pacurar Corneliu", link: "https://drive.google.com/file/d/15-l9w7PVOuLnXDrtkBtPI0Dg4qij6EM9/view?usp=drive_link"}
     ];
+
+    const HeinekenExperienceTickets = [
+        { name: "Ivan David", link: "https://drive.google.com/file/d/1ABQjT63XtNjAaZuDFP4SFHx0JOqaBsmN/view?usp=drive_link"}
+    ]
+
+    const KeukenhofTickets = [
+        { name: "Ivan David", link: "https://drive.google.com/file/d/1ABQjT63XtNjAaZuDFP4SFHx0JOqaBsmN/view?usp=drive_link"}
+    ]
 
     const BruxellesAmsterdamTravelTickets = [
         { name: "Ivan David", link: "https://drive.google.com/file/d/1vE9ziLXp3UlACLnczFvlE0GVaxfZXu8n/view?usp=drive_link"},
@@ -200,11 +208,13 @@ const Agenda = () => {
                                     modalTitle="Amsterdam Heineken Experience" 
                                     modalIcon={'\uD83C\uDF7A'} 
                                     customContent={<Activity 
+                                        ticketNumber="GYGBLKV5BRBH"
                                         address="Orlyplein 1-67"
                                         startsAt="05:15 PM"
                                         imageSource="https://cdn.getyourguide.com/img/tour/b10d5d4a331d1abc.jpeg/145.jpg"
                                         imageWidth="330px"
                                         imageHeight="330px"
+                                        tickets={HeinekenExperienceTickets} 
                                         />}  /> 
                                 : null}
 
@@ -352,6 +362,21 @@ const Agenda = () => {
                                         />}  /> 
                                 : null}  
 
+                                {day === 'May 9' && time === '08:00 AM' ?  
+                                <Modal 
+                                    buttonText="Flight: Charleroi - Iasi" 
+                                    modalTitle="Flight tickets" 
+                                    modalIcon={'\u2708\uFE0F'} 
+                                    customContent={<FlightTicket 
+                                        flightNumber='W43662'
+                                        from="Charleroi"
+                                        to="Iasi"
+                                        departureTime="08:20 AM"
+                                        arrivalTime="12:00 AM"
+                                        tickets={[]} 
+                                        />}  /> 
+                                : null}
+
                                 {day === 'May 9' && time === '08:00 PM' ?  
                                 <Modal 
                                     buttonText="Travel: Amsterdam - Bruxelles" 
@@ -379,6 +404,21 @@ const Agenda = () => {
                                         departureTime="Available all day"
                                         arrivalTime="Available all day"
                                         tickets={BruxellesCharleroiTravelTickets} 
+                                        />}  /> 
+                                : null}
+
+                                {day === 'May 10' && time === '07:00 AM' ?  
+                                <Modal 
+                                    buttonText="Flight: Charleroi - Cluj" 
+                                    modalTitle="Flight tickets" 
+                                    modalIcon={'\u2708\uFE0F'} 
+                                    customContent={<FlightTicket 
+                                        flightNumber='W43352'
+                                        from="Charleroi"
+                                        to="Cluj"
+                                        departureTime="09:15 AM"
+                                        arrivalTime="12:40 AM"
+                                        tickets={[]} 
                                         />}  /> 
                                 : null}
                                 
