@@ -19,7 +19,6 @@ export default function Modal({ buttonText = 'Open', modalIcon, modalTitle = 'We
       <button onClick={toggleModal} className="btn-agenda">
         <strong>{modalIcon}{buttonText}{modalIcon}</strong>
       </button>
-
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>

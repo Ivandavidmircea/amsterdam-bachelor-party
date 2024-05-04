@@ -40,6 +40,34 @@ const Agenda = () => {
         { link: "https://drive.google.com/file/d/1PtrXMHb9wI407xm1o7w5-kdMwDrqvaNT/view?usp=drive_link"},
     ];
 
+    const CharleroiAccomodationBooking = [
+        { link: "https://drive.google.com/file/d/12Rcd4zg_ffg6jh_a3qMZnJ09xQnD49yI/view?usp=drive_link"},
+    ];
+
+    const AmsterdamBruxellesTravelSingleTicket = [
+        { name: "Mihnea Ochesanu", link: "https://drive.google.com/file/d/1m8tuIN1bUPM2ae9PAU4GO8_CLHSwkFx_/view?usp=drive_link"}
+    ];
+
+    const BruxellesCharleroiTravelSingleTicket = [
+        { name: "Mihnea Ochesanu", link: "https://drive.google.com/file/d/1gngOKHDFmqyhzL4smg1so3IuRmfuaJuE/view?usp=drive_link"}
+    ];
+
+    const AmsterdamBruxellesTravelTickets = [
+        { name: "Ghiran Bogdan", link: "https://drive.google.com/file/d/198X88EhjhPjSafmUM5szf-Moi_oPP4jT/view?usp=drive_link"},
+        { name: "Ivan David", link: "https://drive.google.com/file/d/1BhSDRa9b4GIngwObNGPUKYHMNItkrXE8/view?usp=drive_link"},
+        { name: "Matei Andrei", link: "https://drive.google.com/file/d/1hxBHwibiCuXq60J5BGAH3u20SNHY5sAQ/view?usp=drive_link"},
+        { name: "Mateica Septimiu", link: "https://drive.google.com/file/d/1mWbK0a2GFqvvmw-BVRIniNEALm2oo7R_/view?usp=drive_link"},
+        { name: "Pacurar Corneliu", link: "https://drive.google.com/file/d/1eujbCPiChNyvqGvOc-bi81qDJjdGcTSE/view?usp=drive_link"}
+    ];
+
+    const BruxellesCharleroiTravelTickets = [
+        { name: "Ghiran Bogdan", link: "https://drive.google.com/file/d/1C5gtvfCaRD8jKDt78dZSXT92dH4cDuj4/view?usp=drive_link"},
+        { name: "Ivan David", link: "https://drive.google.com/file/d/1Gq2jJW4Lt9G46Y8rJh_ttxXkRDyo4dEM/view?usp=drive_link"},
+        { name: "Matei Andrei", link: "https://drive.google.com/file/d/1gTrCJgmKuQ-HszPMdCypAHEUhVRBKt4A/view?usp=drive_link"},
+        { name: "Mateica Septimiu", link: "https://drive.google.com/file/d/1dv1nH_rFWS2MNencYGJa-arWGUQ7NCWi/view?usp=drive_link"},
+        { name: "Pacurar Corneliu", link: "https://drive.google.com/file/d/18KwI7zq2BjuWXJZLKS89wCnECHH42tV8/view?usp=drive_link"}
+    ];
+
     const [todayColumn, setTodayColumn] = useState(null);
 
     useEffect(() => {
@@ -138,6 +166,34 @@ const Agenda = () => {
                                         />}  /> 
                                 : null}
 
+                                {day === 'May 6' && time === '01:00 PM' ?  
+                                <Modal 
+                                    buttonText="Hard Rock Cafe Amsterdam" 
+                                    modalTitle="Lunch at Hard Rock Cafe Amsterdam" 
+                                    modalIcon={'\u{1F3B8}'}
+                                    customContent={<Activity 
+                                        address="Max Euweplein 57-61, 1017 MA"
+                                        startsAt="01:00 PM"
+                                        imageSource="https://www.iamsterdam.com/_next/image?url=https%3A%2F%2Fapp.thefeedfactory.nl%2Fapi%2Fassets%2F5ff88131de7e8633a4aa65eb%2Fe1f07ea8-bee1-447b-8bdf-6e72c9cc93f5.jpg&w=1080&q=75"
+                                        imageWidth="330px"
+                                        imageHeight="330px"
+                                        />}  /> 
+                                : null}
+
+                                {day === 'May 6' && time === '07:00 AM' ?  
+                                <Modal 
+                                    buttonText="Breakfast" 
+                                    modalTitle="Breakfast at Meininger Hotel Amsterdam City West" 
+                                    modalIcon={'\u{1F373}'}
+                                    customContent={<Activity 
+                                        address="Orlyplein 1-67"
+                                        startsAt="07:00 PM"
+                                        imageSource="https://www.meininger-hotels.com/fileadmin/_processed_/9/b/csm_Service_Banner_1900x850px-min_60f76e69c7.jpg"
+                                        imageWidth="330px"
+                                        imageHeight="250px"
+                                        />}  /> 
+                                : null}  
+
                                 {day === 'May 6' && time === '05:00 PM' ?  
                                 <Modal 
                                     buttonText="Heineken Experience" 
@@ -152,7 +208,21 @@ const Agenda = () => {
                                         />}  /> 
                                 : null}
 
-                                {day === 'May 7' && time === '06:00 AM' ?  
+                                {day === 'May 7' && time === '07:00 AM' ?  
+                                <Modal 
+                                    buttonText="Breakfast" 
+                                    modalTitle="Breakfast at Meininger Hotel Amsterdam City West" 
+                                    modalIcon={'\u{1F373}'}
+                                    customContent={<Activity 
+                                        address="Orlyplein 1-67"
+                                        startsAt="07:00 PM"
+                                        imageSource="https://www.meininger-hotels.com/fileadmin/_processed_/9/b/csm_Service_Banner_1900x850px-min_60f76e69c7.jpg"
+                                        imageWidth="330px"
+                                        imageHeight="250px"
+                                        />}  /> 
+                                : null}  
+
+                                {day === 'May 7' && time === '11:00 AM' ?  
                                 <Modal 
                                     buttonText="Keukenhof" 
                                     modalTitle="Keukenhof Botannical Garden" 
@@ -180,17 +250,135 @@ const Agenda = () => {
                                         />}  /> 
                                 : null}
 
+                                {day === 'May 8' && time === '07:00 AM' ?  
+                                <Modal 
+                                    buttonText="Breakfast" 
+                                    modalTitle="Breakfast at Meininger Hotel Amsterdam City West" 
+                                    modalIcon={'\u{1F373}'}
+                                    customContent={<Activity 
+                                        address="Orlyplein 1-67"
+                                        startsAt="07:00 PM"
+                                        imageSource="https://www.meininger-hotels.com/fileadmin/_processed_/9/b/csm_Service_Banner_1900x850px-min_60f76e69c7.jpg"
+                                        imageWidth="330px"
+                                        imageHeight="250px"
+                                        />}  /> 
+                                : null}  
+
                                 {day === 'May 8' && time === '04:00 PM' ?  
                                 <Modal 
                                     buttonText="TonTon Arcade Room" 
                                     modalTitle="TonTon Arcade Room Amsterdam" 
                                     modalIcon={'\u{1F3AE}'}
                                     customContent={<Activity 
-                                        address=" Polonceaukade 27, 1014 DA"
+                                        address="Polonceaukade 27, 1014 DA"
                                         startsAt="16:00 PM"
                                         imageSource="https://storage.googleapis.com/thehundreds/media/2015/03/DSC_0446.jpeg"
                                         imageWidth="350px"
                                         imageHeight="280px"
+                                        />}  /> 
+                                : null}
+
+                                {day === 'May 8' && time === '01:00 PM' ?  
+                                <Modal 
+                                    buttonText="Factory Girl Lunch" 
+                                    modalTitle="Factory Girl Lunch & Brunch Amsterdam" 
+                                    modalIcon={'\u{1F354}'}
+                                    customContent={<Activity 
+                                        address="Saenredamstraat 32, 1072 CH"
+                                        startsAt="16:00 PM"
+                                        imageSource="https://www.mr-amsterdam.de/blog/media/images/restaurants-essen-trinken/the-factory-girl-amsterdam/the-factory-girl-amsterdam-freuhstueck.jpg"
+                                        imageWidth="350px"
+                                        imageHeight="280px"
+                                        />}  /> 
+                                : null}
+
+                                {day === 'May 8' && time === '08:00 PM' ?  
+                                <Modal 
+                                    buttonText="Travel: Amsterdam - Bruxelles" 
+                                    modalTitle="Travel tickets" 
+                                    modalIcon={'\uD83D\uDE97'} 
+                                    customContent={<TravelTicket 
+                                        ticketNumber='L9W7BL'
+                                        from="Amsterdam City Center - Sloterdijk"
+                                        to="Bruxelles City Center - Midi Train Station"
+                                        departureTime="20:10"
+                                        arrivalTime="23:20"
+                                        tickets={AmsterdamBruxellesTravelSingleTicket} 
+                                        />}  /> 
+                                : null}
+
+                                {day === 'May 8' && time === '11:00 PM' ?  
+                                <Modal 
+                                    buttonText="Travel: Bruxelles - Charleroi" 
+                                    modalTitle="Travel tickets" 
+                                    modalIcon={'\uD83D\uDE97'} 
+                                    customContent={<TravelTicket 
+                                        ticketNumber='N/A'
+                                        from="Bruxelles City Center - Midi Train Station"
+                                        to="Charleroi"
+                                        departureTime="Available all day"
+                                        arrivalTime="Available all day"
+                                        tickets={BruxellesCharleroiTravelSingleTicket} 
+                                        />}  /> 
+                                : null}
+
+                                {day === 'May 8' && time === '11:00 PM' ?  
+                                <Modal 
+                                    buttonText="Check-in: Wauters 75" 
+                                    modalTitle="Accomodation booking" 
+                                    modalIcon={'\uD83C\uDFE8'} 
+                                    customContent={<Accomodation 
+                                        ticketNumber="4036468325"
+                                        venue="Wauters 75 Bruxelles-charleroi-airport"
+                                        address="Rue Joseph Wauters, 6043 Charleroi, Belgium"
+                                        imageSource="https://lh3.googleusercontent.com/proxy/aDsvc3Ik7QocTvagT8vwpho25Kjp02AX67QupKji2XlLIojeoLbFkgESZ9_1q6BiMSkHJw8m8W4HUDK_6geP4e1CCUMQwP5QyQhi0TdgpnH-P-6-oHTaY3HWasE-Gh4pMVFaPeGX2UqApK0pTkxDmQCLR5FTKqw=w287-h192-n-k-rw-no-v1"
+                                        imageWidth="350px"
+                                        imageHeight="280px"
+                                        tickets={CharleroiAccomodationBooking} 
+                                        />}  /> 
+                                : null}
+
+                                {day === 'May 9' && time === '07:00 AM' ?  
+                                <Modal 
+                                    buttonText="Breakfast" 
+                                    modalTitle="Breakfast at Meininger Hotel Amsterdam City West" 
+                                    modalIcon={'\u{1F373}'}
+                                    customContent={<Activity 
+                                        address="Orlyplein 1-67"
+                                        startsAt="07:00 PM"
+                                        imageSource="https://www.meininger-hotels.com/fileadmin/_processed_/9/b/csm_Service_Banner_1900x850px-min_60f76e69c7.jpg"
+                                        imageWidth="330px"
+                                        imageHeight="250px"
+                                        />}  /> 
+                                : null}  
+
+                                {day === 'May 9' && time === '08:00 PM' ?  
+                                <Modal 
+                                    buttonText="Travel: Amsterdam - Bruxelles" 
+                                    modalTitle="Travel tickets" 
+                                    modalIcon={'\uD83D\uDE97'} 
+                                    customContent={<TravelTicket 
+                                        ticketNumber='HD7HCQ'
+                                        from="Amsterdam City Center - Sloterdijk"
+                                        to="Bruxelles City Center - Midi Train Station"
+                                        departureTime="20:10"
+                                        arrivalTime="23:20"
+                                        tickets={AmsterdamBruxellesTravelTickets} 
+                                        />}  /> 
+                                : null}
+
+                                {day === 'May 9' && time === '11:00 PM' ?  
+                                <Modal 
+                                    buttonText="Travel: Bruxelles - Charleroi" 
+                                    modalTitle="Travel tickets" 
+                                    modalIcon={'\uD83D\uDE97'} 
+                                    customContent={<TravelTicket 
+                                        ticketNumber='N/A'
+                                        from="Bruxelles City Center - Midi Train Station"
+                                        to="Charleroi"
+                                        departureTime="Available all day"
+                                        arrivalTime="Available all day"
+                                        tickets={BruxellesCharleroiTravelTickets} 
                                         />}  /> 
                                 : null}
                                 
