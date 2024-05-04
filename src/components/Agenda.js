@@ -89,7 +89,7 @@ const Agenda = () => {
         <table className="styled-table">
             <thead>
                 <tr>
-                    <th><center>Time</center></th>
+                    <th data-label="Header"><center>Time</center></th>
                     {days.map(day => <th key={day}><center>{day}</center></th>)}
                 </tr>
                 <tr>

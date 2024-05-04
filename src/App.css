@@ -6,6 +6,13 @@
   padding-left: 400px;
 }
 
+/* Media query for devices with a max-width of 600px */
+@media (max-width: 600px) {
+  .App {
+    padding-left: 550px;
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
